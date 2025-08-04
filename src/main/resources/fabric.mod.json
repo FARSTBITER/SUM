@@ -20,7 +20,7 @@
 			"com.sum.SUM"
 		],
 		"client": [
-			"com.SUM.SUMClient"
+			"com.sum.SUMClient"
 		]
 	},
 	"mixins": [
