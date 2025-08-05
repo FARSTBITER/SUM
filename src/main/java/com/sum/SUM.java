@@ -2,12 +2,20 @@ package com.sum;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTables;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -31,6 +39,22 @@ public class SUM implements ModInitializer {
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
 			
 			builder.add(BROWN_COAL, 1200);
+			
+		});
+		
+		LootTableEvents.MODIFY.register((key, tableBuilder, source, registry) -> {
+			
+			if(LootTables.ABANDONED_MINESHAFT_CHEST.equals(key)) {
+				
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.rolls(ConstantLootNumberProvider.create(1))
+						.conditionally(RandomChanceLootCondition.builder(0.3F))
+						.with(ItemEntry.builder(BROWN_COAL))
+						.apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0F, 10.0F)).build());
+				
+				tableBuilder.pool(poolBuilder.build());
+				
+			}
 			
 		});
 		
