@@ -42,7 +42,22 @@ public class SUMRegistry {
 	
 	public static void modifyVanillaLootTables() {
 		
-		modifyVanillaLootTable(LootTables.IGLOO_CHEST_CHEST, SUMItems.BROWN_COAL, 0.75F, 6.0F, 12.0F);
+		modifyVanillaLootTable(LootTables.SIMPLE_DUNGEON_CHEST, SUMItems.BROWN_COAL, 0.3F, 2.0F, 6.0F);
+		modifyVanillaLootTable(LootTables.ABANDONED_MINESHAFT_CHEST, SUMItems.BROWN_COAL, 0.3F, 4.0F, 10.0F);
+		modifyVanillaLootTable(LootTables.ANCIENT_CITY_CHEST, SUMItems.BROWN_COAL, 0.5F, 8.0F, 20.0F);
+		modifyVanillaLootTable(LootTables.IGLOO_CHEST_CHEST, SUMItems.BROWN_COAL, 0.8F, 6.0F, 12.0F);
+		modifyVanillaLootTable(LootTables.OCEAN_RUIN_WARM_ARCHAEOLOGY, SUMItems.BROWN_COAL, 0.2F, 1.0F, 1.0F);
+		modifyVanillaLootTable(LootTables.OCEAN_RUIN_COLD_ARCHAEOLOGY, SUMItems.BROWN_COAL, 0.2F, 1.0F, 1.0F);
+		modifyVanillaLootTable(LootTables.SHIPWRECK_SUPPLY_CHEST, SUMItems.BROWN_COAL, 0.4F, 4.0F, 12.0F);
+		modifyVanillaLootTable(LootTables.STRONGHOLD_CROSSING_CHEST, SUMItems.BROWN_COAL, 0.4F, 4.0F, 12.0F);
+		modifyVanillaLootTable(LootTables.TRAIL_RUINS_COMMON_ARCHAEOLOGY, SUMItems.BROWN_COAL, 0.05F, 1.0F, 1.0F);
+		modifyVanillaLootTable(LootTables.UNDERWATER_RUIN_SMALL_CHEST, SUMItems.BROWN_COAL, 0.9F, 2.0F, 6.0F);
+		modifyVanillaLootTable(LootTables.UNDERWATER_RUIN_BIG_CHEST, SUMItems.BROWN_COAL, 0.9F, 2.0F, 6.0F);
+		modifyVanillaLootTable(LootTables.VILLAGE_TOOLSMITH_CHEST, SUMItems.BROWN_COAL, 0.1F, 2.0F, 4.0F);
+		modifyVanillaLootTable(LootTables.VILLAGE_FISHER_CHEST, SUMItems.BROWN_COAL, 0.5F, 2.0F, 4.0F);
+		modifyVanillaLootTable(LootTables.VILLAGE_BUTCHER_CHEST, SUMItems.BROWN_COAL, 0.3F, 2.0F, 4.0F);
+		modifyVanillaLootTable(LootTables.VILLAGE_SNOWY_HOUSE_CHEST, SUMItems.BROWN_COAL, 0.5F, 2.0F, 6.0F);
+		modifyVanillaLootTable(LootTables.WOODLAND_MANSION_CHEST, SUMItems.BROWN_COAL, 0.2F, 2.0F, 6.0F);
 		
 	}
 	
