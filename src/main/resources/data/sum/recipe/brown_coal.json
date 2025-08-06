@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sum:brown_coal_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "sum:brown_coal"
+  }
+}

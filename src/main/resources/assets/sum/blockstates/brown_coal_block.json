@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "sum:block/brown_coal_block"
+    }
+  }
+}

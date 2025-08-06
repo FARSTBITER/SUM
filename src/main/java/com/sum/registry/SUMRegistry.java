@@ -1,11 +1,16 @@
 package com.sum.registry;
 
+import com.sum.block.SUMBlocks;
 import com.sum.item.SUMItems;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -30,9 +35,14 @@ public class SUMRegistry {
 	
 	public static void register() {
 		
+		registerBlock(SUMBlocks.BROWN_COAL_BLOCK, SUMRegistryKeys.BROWN_COAL_BLOCK_BLOCK_KEY, SUMRegistryKeys.BROWN_COAL_BLOCK_ITEM_KEY);
+		
 		registerItem(SUMItems.BROWN_COAL, SUMRegistryKeys.BROWN_COAL_ITEM_KEY);
 		
+		registerFuel(SUMBlocks.BROWN_COAL_BLOCK.asItem(), 12000);
 		registerFuel(SUMItems.BROWN_COAL, 1200);
+		
+		madeBlockFlammable(SUMBlocks.BROWN_COAL_BLOCK, 8);
 		
 		modifyVanillaLootTable(LootTables.SIMPLE_DUNGEON_CHEST, SUMItems.BROWN_COAL, 0.3F, 2.0F, 6.0F);
 		modifyVanillaLootTable(LootTables.ABANDONED_MINESHAFT_CHEST, SUMItems.BROWN_COAL, 0.3F, 4.0F, 10.0F);
@@ -57,13 +67,27 @@ public class SUMRegistry {
 		registerTradeOffer(VillagerProfession.FISHERMAN, 1, SUMItems.BROWN_COAL, 12, Items.EMERALD, 1, 20, 2, 0.05F);
 		registerTradeOffer(VillagerProfession.BUTCHER, 2, SUMItems.BROWN_COAL, 18, Items.EMERALD, 1, 20, 2, 0.05F);
 		
+		modifyVanillaItemGroup(ItemGroups.BUILDING_BLOCKS, Blocks.COAL_BLOCK.asItem(), SUMBlocks.BROWN_COAL_BLOCK.asItem());
 		modifyVanillaItemGroup(ItemGroups.INGREDIENTS, Items.COAL, SUMItems.BROWN_COAL);
+		
+	}
+	
+	private static void registerBlock(Block block, RegistryKey<Block> registryBlockKey, RegistryKey<Item> registryItemKey) {
+		
+		Registry.register(Registries.BLOCK, registryBlockKey, block);
+		Registry.register(Registries.ITEM, registryItemKey, new BlockItem(block, new Item.Settings().registryKey(registryItemKey)));
 		
 	}
 	
 	private static void registerItem(Item item, RegistryKey<Item> registryKey) {
 		
 		Registry.register(Registries.ITEM, registryKey, item);
+		
+	}
+	
+	private static void madeBlockFlammable(Block block, int burn) {
+		
+		FlammableBlockRegistry.getDefaultInstance().add(block, burn, burn);
 		
 	}
 	
