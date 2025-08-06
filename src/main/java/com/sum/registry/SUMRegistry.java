@@ -28,19 +28,11 @@ import net.minecraft.village.VillagerProfession;
 
 public class SUMRegistry {
 	
-	public static void registerItems() {
+	public static void register() {
 		
 		registerItem(SUMItems.BROWN_COAL, SUMRegistryKeys.BROWN_COAL_ITEM_KEY);
 		
-	}
-	
-	public static void registerFuels() {
-		
 		registerFuel(SUMItems.BROWN_COAL, 1200);
-		
-	}
-	
-	public static void modifyVanillaLootTables() {
 		
 		modifyVanillaLootTable(LootTables.SIMPLE_DUNGEON_CHEST, SUMItems.BROWN_COAL, 0.3F, 2.0F, 6.0F);
 		modifyVanillaLootTable(LootTables.ABANDONED_MINESHAFT_CHEST, SUMItems.BROWN_COAL, 0.3F, 4.0F, 10.0F);
@@ -59,19 +51,11 @@ public class SUMRegistry {
 		modifyVanillaLootTable(LootTables.VILLAGE_SNOWY_HOUSE_CHEST, SUMItems.BROWN_COAL, 0.5F, 2.0F, 6.0F);
 		modifyVanillaLootTable(LootTables.WOODLAND_MANSION_CHEST, SUMItems.BROWN_COAL, 0.2F, 2.0F, 6.0F);
 		
-	}
-	
-	public static void registerTradeOffers() {
-		
 		registerTradeOffer(VillagerProfession.ARMORER, 1, SUMItems.BROWN_COAL, 18, Items.EMERALD, 1, 20, 2, 0.05F);
 		registerTradeOffer(VillagerProfession.WEAPONSMITH, 1, SUMItems.BROWN_COAL, 18, Items.EMERALD, 1, 20, 2, 0.05F);
 		registerTradeOffer(VillagerProfession.TOOLSMITH, 1, SUMItems.BROWN_COAL, 18, Items.EMERALD, 1, 20, 2, 0.05F);
 		registerTradeOffer(VillagerProfession.FISHERMAN, 1, SUMItems.BROWN_COAL, 12, Items.EMERALD, 1, 20, 2, 0.05F);
 		registerTradeOffer(VillagerProfession.BUTCHER, 2, SUMItems.BROWN_COAL, 18, Items.EMERALD, 1, 20, 2, 0.05F);
-		
-	}
-	
-	public static void modifyVanillaItemGroups() {
 		
 		modifyVanillaItemGroup(ItemGroups.INGREDIENTS, Items.COAL, SUMItems.BROWN_COAL);
 		

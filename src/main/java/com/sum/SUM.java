@@ -11,11 +11,7 @@ public class SUM implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		
-		SUMRegistry.registerItems();
-		SUMRegistry.registerFuels();
-		SUMRegistry.modifyVanillaLootTables();
-		SUMRegistry.registerTradeOffers();
-		SUMRegistry.modifyVanillaItemGroups();
+		SUMRegistry.register();
 		
 	}
 	
