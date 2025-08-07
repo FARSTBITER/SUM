@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "brown_coal",
+  "ingredient": "sum:brown_coal_ore",
+  "result": {
+    "id": "sum:brown_coal"
+  }
+}

@@ -1,5 +1,7 @@
 {
+  "block.sum.brown_coal_ore": "Ore of Brown Coal",
   "block.sum.brown_coal_block": "Block of Brown Coal",
+  "item.sum.brown_coal_ore": "Ore of Brown Coal",
   "item.sum.brown_coal_block": "Block of Brown Coal",
   "item.sum.brown_coal": "Brown Coal"
 }

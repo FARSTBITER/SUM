@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "sum:brown_coal_block"
+    "sum:brown_coal_block",
+	"sum:brown_coal_ore"
   ]
 }

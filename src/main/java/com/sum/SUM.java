@@ -1,6 +1,10 @@
 package com.sum;
 
-import com.sum.registry.SUMRegistry;
+import com.sum.block.SUMBlocks;
+import com.sum.item.SUMItemGroups;
+import com.sum.item.SUMItems;
+import com.sum.loot.SUMLootTables;
+import com.sum.village.SUMTradeOffers;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -11,7 +15,11 @@ public class SUM implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		
-		SUMRegistry.register();
+		SUMBlocks.register();
+		SUMItems.register();
+		SUMItemGroups.register();
+		SUMLootTables.register();
+		SUMTradeOffers.register();
 		
 	}
 	
