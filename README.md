@@ -1,2 +1,6 @@
-# SUM
-Some undefined mod...
+<h1 >SUM</h1>
+<p>SUM is a mod for Minecraft: Java Edition that doesn't have a clearly defined theme and adds a variety of things. Key features include tight integration with the original game, such as each recipe being given to the player upon receiving certain items (similar to giving recipes through advancement in vanilla), or tight integration of mod items with vanilla recipes. Also, this mod is something like my course project, so most things will be relatively simple from a programming standpoint, but you never know where your imagination might lead you.</p>
+<h2 >Support and usage</h2>
+<p>You can support the development just by playing with this mod and sharing it with your friends. Regarding the license, nothing is prohibited as long as it does not violate moral standards. If you have a suggestion or more importantly you can make better textures (I am bad at drawing), just go to github and make a pull request, if everything is ok I will gladly include your changes and mention in the credits.</p>
+<h2 >Update and Publication Policy</h2>
+<p>Even though I started playing Minecraft back in the beta era, I still like new versions, so the mod is being developed strictly for the most current version of the game, and when a new version of the game is released, the mod will be immediately remade for it. As for the distribution of the mod on third-party sites, it is officially distributed exclusively through modrintch. Alas, CurseForge has long ceased to be a convenient and reliable platform in my understanding. I do not forbid others to post this mod on a third-party site, but I kindly ask in such cases to leave a link to the official site or github of the mod.</p>
