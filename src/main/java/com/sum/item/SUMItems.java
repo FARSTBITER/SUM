@@ -13,6 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class SUMItems {
 	
+	public static final Item BROWN_COAL = register("brown_coal", Item::new, new Item.Settings());
+	
 	public static void initialize() {
 		
 	}

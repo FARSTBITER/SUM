@@ -8,6 +8,8 @@ public class SUMFuels {
 		
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
 			
+			builder.add(SUMItems.BROWN_COAL, 1200);
+			
 		});
 		
 	}
