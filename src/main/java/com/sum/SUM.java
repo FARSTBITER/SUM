@@ -3,6 +3,7 @@ package com.sum;
 import com.sum.item.SUMFuels;
 import com.sum.item.SUMItemGroups;
 import com.sum.item.SUMItems;
+import com.sum.loot.SUMLootTables;
 import com.sum.village.SUMTradeOffers;
 
 import net.fabricmc.api.ModInitializer;
@@ -18,6 +19,7 @@ public class SUM implements ModInitializer {
 		SUMFuels.initialize();
 		SUMItemGroups.initialize();
 		SUMTradeOffers.initialize();
+		SUMLootTables.initialize();
 		
 	}
 	
