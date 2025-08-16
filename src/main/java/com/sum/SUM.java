@@ -1,5 +1,6 @@
 package com.sum;
 
+import com.sum.block.SUMBlocks;
 import com.sum.item.SUMFuels;
 import com.sum.item.SUMItemGroups;
 import com.sum.item.SUMItems;
@@ -15,6 +16,7 @@ public class SUM implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		
+		SUMBlocks.initialize();
 		SUMItems.initialize();
 		SUMFuels.initialize();
 		SUMItemGroups.initialize();
