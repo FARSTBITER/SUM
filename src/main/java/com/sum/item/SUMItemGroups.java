@@ -1,6 +1,7 @@
 package com.sum.item;
 
 import com.sum.SUM;
+import com.sum.block.SUMBlocks;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -25,6 +26,7 @@ public class SUMItemGroups {
 		
 		ItemGroupEvents.modifyEntriesEvent(SUM_MAIN_KEY).register(itemGroup -> {
 			
+			itemGroup.add(SUMBlocks.BROWN_COAL_BLOCK);
 			itemGroup.add(SUMItems.BROWN_COAL);
 			
 		});

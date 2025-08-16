@@ -7,7 +7,7 @@ public class SUMFlammableBlocks {
 	
 	public static void initialize() {
 		
-		
+		register(SUMBlocks.BROWN_COAL_BLOCK, 10, 10);
 		
 	}
 	
