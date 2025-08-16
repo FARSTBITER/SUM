@@ -1,6 +1,7 @@
 package com.sum;
 
 import com.sum.block.SUMBlocks;
+import com.sum.block.SUMFlammableBlocks;
 import com.sum.item.SUMFuels;
 import com.sum.item.SUMItemGroups;
 import com.sum.item.SUMItems;
@@ -19,6 +20,7 @@ public class SUM implements ModInitializer {
 		SUMBlocks.initialize();
 		SUMItems.initialize();
 		SUMFuels.initialize();
+		SUMFlammableBlocks.initialize();
 		SUMItemGroups.initialize();
 		SUMTradeOffers.initialize();
 		SUMLootTables.initialize();
