@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.sum.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"SUMClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

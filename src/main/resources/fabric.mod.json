@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "sum",
+	"version": "0.1.0",
+	"name": "SUM",
+	"description": "Adds a variety of things that are not tied to a single theme, but are tightly integrated with vanilla.",
+	"authors": [
+		"FARSTBITER"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/sum",
+		"sources": "https://github.com/FARSTBITER/SUM",
+		"issues": "https://github.com/FARSTBITER/SUM/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/sum/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sum.SUM"
+		],
+		"client": [
+			"com.sum.SUMClient"
+		]
+	},
+	"mixins": [
+		"sum.mixins.json",
+		{
+			"config": "sum.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "1.21.8",
+		"java": ">=21",
+		"fabric-api": ">=0.133.4+1.21.8"
+	}
+}
