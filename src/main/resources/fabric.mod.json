@@ -35,5 +35,17 @@
 		"minecraft": "1.21.8",
 		"java": ">=21",
 		"fabric-api": ">=0.133.4+1.21.8"
+	},
+	"recommends": {
+		"modmenu": ">=15.0.0"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.donate": "https://www.paypal.com/donate/?hosted_button_id=FD2JYBQV9JPKJ",
+				"modmenu.wiki": "https://github.com/FARSTBITER/SUM/wiki"
+			},
+			"update_checker": true
+		}
 	}
 }
