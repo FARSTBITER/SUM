@@ -1,5 +1,6 @@
 package com.sum;
 
+import com.sum.item.SUMFuels;
 import com.sum.item.SUMItems;
 
 import net.fabricmc.api.ModInitializer;
@@ -12,6 +13,7 @@ public class SUM implements ModInitializer {
 	public void onInitialize() {
 		
 		SUMItems.initialize();
+		SUMFuels.initialize();
 		
 	}
 	
